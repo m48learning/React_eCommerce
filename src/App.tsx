@@ -1,9 +1,12 @@
 import React from "react";
+import AppRouter from "./router/AppRouter";
+import { useQuery } from "@tanstack/react-query";
 
-export default function App() {
+
+const App: React.FC = () => {
   return (
-    <div>
-      <h1>React + Webpack + TypeScript</h1>
-    </div>
+    <AppRouter />
   );
 }
+
+export default App;
